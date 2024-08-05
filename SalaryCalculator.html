@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Impuestos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Index.html">About Me</a></li>
+                <li><a href="proyectos.html">Projects</a></li>
+                <li><a href="Jose Alberto Miranda - Curriculum.pdf">Curriculum</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="calculadora">
+        <div class="informacion">
+            <h2>Calculadora de Impuestos</h2>
+            <p>Herramienta que facilita el cálculo de impuestos sobre el salario en Costa Rica.</p>
+        </div>
+        <form id="calculadoraForm">
+            <label for="salarioUSD">Su salario en USD:</label>
+            <input type="number" id="salarioUSD" name="salarioUSD" required oninput="calcularImpuestos()">
+            <label for="tipoCambio">Tipo de cambio (1 USD = ₡):</label>
+            <input type="number" id="tipoCambio" name="tipoCambio" step="0.01" value="500.00" required oninput="calcularImpuestos()">
+        </form>
+        <div id="tramos">
+            <h2>Tramos</h2>
+            <ul>
+                <li>Hasta ₡929,000.00: 0% <span id="impuesto1">₡0.00</span></li>
+                <li>Sobre el excedente de ₡929,000.00 hasta ₡1,363,000.00: 10% <span id="impuesto2">₡0.00</span></li>
+                <li>Sobre el excedente de ₡1,363,000.00 hasta ₡2,392,000.00: 15% <span id="impuesto3">₡0.00</span></li>
+                <li>Sobre el excedente de ₡2,392,000.00 hasta ₡4,783,000.00: 20% <span id="impuesto4">₡0.00</span></li>
+                <li>Sobre el excedente de ₡4,783,000.00: 25% <span id="impuesto5">₡0.00</span></li>
+            </ul>
+        </div>
+        <div id="detalles">
+            <h2>Detalles</h2>
+            <p>Salario Bruto: ₡<span id="salarioCRC">0.00</span></p>
+            <p>Impuestos sobre la Renta: ₡<span id="totalImpuestos">0.00</span></p>
+            <p>CCSS (10.67%): ₡<span id="ccss">0.00</span></p>
+            <p>Total de Deducciones: ₡<span id="totalDeducciones">0.00</span></p>
+            <p>Salario Neto: ₡<span id="salarioNeto">0.00</span></p>
+            <p>Porcentaje Retenido: <span id="porcentajeRetenido">0.00%</span></p>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">&copy; 2024 Jose Alberto Miranda Cortés</p>
+            <div class="footer-icons">
+                <a href="mailto:jose-alberto18@hotmail.com" target="_blank">
+                    <img src="imagenes/H.png" alt="Hotmail Logo" class="footer-logo">
+                </a>
+                <a href="https://github.com/Zecarad" target="_blank">
+                    <img src="imagenes/G.png" alt="GitHub Logo" class="footer-logo">
+                </a>
+                <a href="https://x.com/joseso18" target="_blank">
+                    <img src="imagenes/X1.png" alt="Twitter Logo" class="footer-logo">
+                </a>
+                <a href="https://www.linkedin.com/in/josemirandalink/" target="_blank">
+                    <img src="imagenes/L.png" alt="LinkedIn Logo" class="footer-logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="settlement.JS"></script>
+</body>
+</html>
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Billing Project</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Index.html">About Me</a></li>
+            <li><a href="proyectos.html">Projects</a></li>
+            <li><a href="Jose Alberto Miranda - Curriculum.pdf">Curriculum</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="billing-project">
+            <p>This project is a billing program implemented in Java, with a MySQL database and using JasperReport for invoice generation. The objective is to provide an efficient and user-friendly billing system for managing client and product information, and generating invoices.</p>
+            <div class="project-card">
+                <img src="imagenes/1.jpg" alt="Client, Product, and User buttons">
+                <p>The first image shows the buttons for Client, Product, and User.</p>
+            </div>
+            <div class="project-card">
+                <img src="imagenes/2.jpg" alt="Billing button">
+                <p>The second image has the Billing button.</p>
+            </div>
+            <div class="project-card">
+                <img src="imagenes/3.jpg" alt="User options">
+                <p>The third image shows buttons for Change User, New User, Help, About Us, and Exit.</p>
+            </div>
+            <div class="project-card">
+                <img src="imagenes/4.jpg" alt="Client registration window">
+                <p>The fourth image is the Client Registration window with fields for Document Type, Client ID, Name, Surname, Phone, Email, Country, Birth Date, and Join Date. A DataGridView with registered clients and buttons for Add Client, Delete Client, Edit Client, and Save Changes is also shown.</p>
+            </div>
+            <div class="project-card">
+                <img src="imagenes/5.jpg" alt="New product entry window">
+                <p>The fifth image allows the entry of new products with fields for Description, Category, Price, Details, and Quantity. The SKU is auto-incremented, and a DataGridView with the entered product details, and buttons for Add Product, Delete Product, Edit Product, and Save Changes are included.</p>
+            </div>
+            <div class="project-card">
+                <img src="imagenes/6.jpg" alt="User entry window">
+                <p>The sixth image is the User Entry window with fields for ID, Username, Password, Email, Phone, and Description, along with buttons for Add and Clear.</p>
+            </div>
+            <div class="project-card">
+                <img src="imagenes/7.jpg" alt="Billing window">
+                <p>The seventh image is the Billing window, requesting billing details: Client, Product, Quantity, and Date. A DataGridView below shows the added products with their SKU, Description, Price, Details, Quantity, and Total, along with buttons for Add Product, Delete Product, Edit Product, Save Changes, and Generate Invoice.</p>
+            </div>
+            <div class="project-card">
+                <img src="imagenes/8.jpg" alt="Generated invoice">
+                <p>The eighth image shows the result of generating an invoice, producing a document with the product list using JasperViewer, which can be printed or downloaded as an invoice.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">&copy; 2024 Jose Alberto Miranda Cortés</p>
+            <div class="footer-icons">
+                <a href="mailto:jose-alberto18@hotmail.com" target="_blank">
+                    <img src="imagenes/H.png" alt="Hotmail Logo" class="footer-logo">
+                </a>
+                <a href="https://github.com/Zecarad" target="_blank">
+                    <img src="imagenes/G.png" alt="GitHub Logo" class="footer-logo">
+                </a>
+                <a href="https://x.com/joseso18" target="_blank">
+                    <img src="imagenes/X1.png" alt="Twitter Logo" class="footer-logo">
+                </a>
+                <a href="https://www.linkedin.com/in/josemirandalink/" target="_blank">
+                    <img src="imagenes/L.png" alt="LinkedIn Logo" class="footer-logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="Bill.js"></script>
+</body>
+</html>

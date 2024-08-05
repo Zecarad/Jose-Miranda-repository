@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Liquidación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Index.html">About Me</a></li>
+                <li><a href="proyectos.html">Projects</a></li>
+                <li><a href="Jose Alberto Miranda - Curriculum.pdf">Curriculum</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="calculadora">
+            <form id="liquidacionForm">
+                <label for="fechaIngreso">Fecha de ingreso:</label>
+                <input type="date" id="fechaIngreso" name="fechaIngreso"><br><br>
+
+                <label for="fechaSalida">Fecha de salida:</label>
+                <input type="date" id="fechaSalida" name="fechaSalida"><br><br>
+
+                <label for="motivoSalida">Motivo de la salida:</label>
+                <select id="motivoSalida" name="motivoSalida">
+                    <option value="injustificado">Despido Injustificado</option>
+                    <option value="justificado">Despido Justificado</option>
+                    <option value="renuncia">Renuncia</option>
+                </select><br><br>
+
+                <label for="tipoPago">Tipo de pago:</label>
+                <select id="tipoPago" name="tipoPago">
+                    <option value="quincenal">Quincenal</option>
+                    <option value="mensual">Mensual</option>
+                </select><br><br>
+
+                <label for="preaviso">Se ha ejercido el preaviso:</label>
+                <select id="preaviso" name="preaviso">
+                    <option value="total">Preaviso a pagar total</option>
+                    <option value="pagado">Preaviso pagado</option>
+                </select><br><br>
+
+                <label for="saldoVacaciones">Saldo de vacaciones:</label>
+                <input type="number" id="saldoVacaciones" name="saldoVacaciones"><br><br>
+
+                <label>Salarios mensuales:</label><br>
+                <div id="salariosMensuales">
+                    <div> <input type="number" class="salario-mes" name="salarioEnero" placeholder="Enero"> </div>
+                    <div> <input type="number" class="salario-mes" name="salarioFebrero" placeholder="Febrero"> </div>
+                    <div> <input type="number" class="salario-mes" name="salarioMarzo" placeholder="Marzo"> </div>
+                    <div> <input type="number" class="salario-mes" name="salarioAbril" placeholder="Abril"> </div>
+                    <div> <input type="number" class="salario-mes" name="salarioMayo" placeholder="Mayo"> </div>
+                    <div> <input type="number" class="salario-mes" name="salarioJunio" placeholder="Junio"> </div>
+                    <div> <input type="number" class="salario-mes" name="salarioJulio" placeholder="Julio"> </div>
+                    <div> <input type="number" class="salario-mes" name="salarioAgosto" placeholder="Agosto"> </div>
+                    <div> <input type="number" class="salario-mes" name="salarioSeptiembre" placeholder="Septiembre"> </div>
+                    <div> <input type="number" class="salario-mes" name="salarioOctubre" placeholder="Octubre"> </div>
+                    <div> <input type="number" class="salario-mes" name="salarioNoviembre" placeholder="Noviembre"> </div>
+                    <div> <input type="number" class="salario-mes" name="salarioDiciembre" placeholder="Diciembre"> </div>
+                </div><br><br>
+
+                <button type="button" onclick="calcularLiquidacion()">Calcular Liquidación</button>
+            </form>
+        </section>
+        <section id="resultado">
+            <h2>Resultado</h2>
+            <div id="resultadoTexto"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">&copy; 2024 Jose Alberto Miranda Cortés</p>
+            <div class="footer-icons">
+                <a href="mailto:jose-alberto18@hotmail.com" target="_blank">
+                    <img src="imagenes/H.png" alt="Hotmail Logo" class="footer-logo">
+                </a>
+                <a href="https://github.com/Zecarad" target="_blank">
+                    <img src="imagenes/G.png" alt="GitHub Logo" class="footer-logo">
+                </a>
+                <a href="https://x.com/joseso18" target="_blank">
+                    <img src="imagenes/X1.png" alt="Twitter Logo" class="footer-logo">
+                </a>
+                <a href="https://www.linkedin.com/in/josemirandalink/" target="_blank">
+                    <img src="imagenes/L.png" alt="LinkedIn Logo" class="footer-logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
